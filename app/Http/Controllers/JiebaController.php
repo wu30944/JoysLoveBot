@@ -55,6 +55,8 @@ class JiebaController extends Controller
     public function index()
     {
 
+        return view('welcome');
+
         $this->bot = resolve('LINE\LINEBot');
         $json = file_get_contents('/Users/andywu/Documents/Code/LineEchoBot/tests/TestJson/TestMessage.json');
         $data = json_decode($json,true);
